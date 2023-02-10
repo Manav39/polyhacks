@@ -13,6 +13,10 @@ const jobSchema=new mongoose.Schema({
         type:String,
         required:true
     },
+    skillsRequired:{
+        type:String,
+        required:true
+    },
     salaray:{
         type:String,
         required:true

@@ -4,8 +4,7 @@ const router=express.Router()
 const Jobs=require('../models/jobs')
 
 router.get("/",async(req,res)=>{
-    const jobs=await Jobs.find({})
-    console.log(jobs)
+    const jobs=await Jobs.find({})   
     res.send(jobs)
 })
 router.get("/byId/:id",async (req,res)=>{
