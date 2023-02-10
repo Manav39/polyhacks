@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
+import Landing from './pages/Landing';
+import {Routes,Route} from 'react-router-dom';
+import Mentorship from './pages/Mentorship';
+import Compete from './pages/Compete';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Courses from './pages/Courses';
+import Jobs from './pages/Jobs';
+import Quiz from './pages/Quiz';
+import Tutorial from './pages/Tutorial';
+import Profile from './pages/Profile';
+import {useFirebase } from './context/Firebase'
+import {useNavigate} from 'react-router-dom'
 function App() {
+  const firebase = useFirebase();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Landing />}/>
+        <Route path='/mentorship' element={<Mentorship />} />
+        <Route path='/compete' element={<Compete />} />
+        <Route path='/login' element ={<Login />} />
+        <Route path='/register' element={<Register />}/>
+        <Route path='/courses' element={<Courses />}/>
+        <Route path='/quiz' element={<Quiz />}/>
+        <Route path='/jobs' element={<Jobs />}/>
+        <Route path='/tutorials' element={<Tutorial/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+      </Routes>
     </div>
   );
 }

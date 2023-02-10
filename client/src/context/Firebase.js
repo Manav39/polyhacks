@@ -58,6 +58,7 @@ export const FirebaseProvider = (props) => {
   };
 
   const isLoggedIn = user ? true : false;
+  console.log('Logged in',isLoggedIn)
   return (
     <FirebaseContext.Provider
       value={{ CreateUser, signInUser, isLoggedIn, user, signInGoogle }}
