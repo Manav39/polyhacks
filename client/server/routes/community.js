@@ -6,7 +6,6 @@ const Comments=require('../models/comment')
 
 router.get("/", async (req,res)=>{
     const posts=await Posts.find({})
-    console.log(posts)
     res.send(posts)
 })
 
@@ -32,7 +31,6 @@ router.post("/comment/:postId", async (req,res)=>{
     const body=req.body
     const postId=req.params.postId
     body["postId"]=postId
-    console.log(body)
     await Comments.create(body)
     res.end()
 })

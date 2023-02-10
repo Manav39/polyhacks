@@ -13,6 +13,8 @@ import Tutorial from './pages/Tutorial';
 import Profile from './pages/Profile';
 import {useFirebase } from './context/Firebase'
 import {useNavigate} from 'react-router-dom'
+import IndividualJob from './pages/IndividualJob';
+import CreateJob from './pages/CreateJob';
 function App() {
   const firebase = useFirebase();
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path='/jobs' element={<Jobs />}/>
         <Route path='/tutorials' element={<Tutorial/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path="/jobs/byId/:id" element={<IndividualJob/>}></Route>
+        <Route path="/jobs/createjob" element={<CreateJob/>}></Route>
       </Routes>
     </div>
   );
