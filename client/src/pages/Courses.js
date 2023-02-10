@@ -37,7 +37,6 @@ const Courses = () => {
       .get(`${BASE_URL}/course-instructor/course-url`, options)
       .then((name) => setCourses(name.data));
   }, []);
-  const j = 0;
   for (var id in courses) {
     url[id] = [
       courses[id]["course url"],
@@ -45,7 +44,7 @@ const Courses = () => {
       [instructor[id]["instructor"]][0],
     ];
   }
-
+  console.log('url',url)
   return (
     <>
     <TextField

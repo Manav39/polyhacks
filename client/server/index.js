@@ -16,9 +16,11 @@ const jobRouter=require('./routes/jobs')
 app.use("/jobs",jobRouter)
 
 const start=async ()=>{
-     connectdb('mongodb+srv://MEet:meet@cluster0.b7gen.mongodb.net/?retryWrites=true&w=majority') 
+     connectdb('mongodb+srv://Manav:manav@cluster0.d9dv9cl.mongodb.net/?retryWrites=true&w=majority') 
     app.listen(8800,()=>{
         console.log("Hello")
     })   
 }
 start()
+
+//mongodb+srv://<username>:<password>@cluster0.b7gen.mongodb.net/?retryWrites=true&w=majority

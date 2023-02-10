@@ -5,6 +5,7 @@ const Jobs=require('../models/jobs')
 
 router.get("/",async(req,res)=>{
     const jobs=await Jobs.find({})   
+    console.log('jobs',jobs)
     res.send(jobs)
 })
 router.get("/byId/:id",async (req,res)=>{

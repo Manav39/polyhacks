@@ -1,0 +1,78 @@
+.left-portion {
+    margin-left: 100px ;
+    margin-right: px;
+    padding-right: 100px;
+    margin-top: 150px;
+  }
+  
+  
+  
+  .bg-img {
+    background: url("../assets/back2.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 600px;
+  }
+  .left-portion h1 {
+    color:black;
+    font-size: 62px;
+  }
+  
+  .left-portion h1 span {
+    display: inline-block;
+    color: #434242;
+    font-weight: bold;
+  }
+  
+  .left-portion p {
+    color:black;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  
+  .btn-1 {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #023b48;
+    border: 1px solid #023b48;
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .btn-1:hover {
+    background-color: transparent;
+    color: #023b48;
+  }
+  
+   .btn-2 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 45px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #023b48;
+  }
+  
+   .btn-2:hover {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .right-portion {
+    margin-right: 5%;
+  }
+  
+  .img-position {
+    
+    max-width:100%;
+    margin-top: 150px;
+    float: right;
+    object-fit: cover;
+    width: 1000px;
+    height: 350px;
+    margin-bottom: 40px;
+  }

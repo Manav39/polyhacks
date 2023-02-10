@@ -49,7 +49,7 @@ const Compete = () => {
                     <td>{con.start_time}</td>
                     <td>{con.end_time}</td>
                     <td>{con.in_24_hours}</td>
-                    <td><Button variant="success" href={con.url} target='_blank'>Register</Button></td>
+                    <td><Button variant="success" href={con.url} target='_blank' style={{backgroundColor:'green' , padding :'10px'}}>Register</Button></td>
                   </tr>
                 )
             })
